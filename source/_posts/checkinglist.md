@@ -1,4 +1,6 @@
-
+---
+title: 写作checking-list
+---
 # writing a sentence
 > - [x] 这句话的目的是什么？
 > - [x] 这句话能不能不写？

@@ -1,7 +1,7 @@
 
 ---
 title: cuda-- 问题
-image: /images/theme/post-image.jpg  #设置图床图片
+
 ---
 
 # cuda 问题
