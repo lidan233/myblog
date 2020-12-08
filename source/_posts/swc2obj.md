@@ -86,8 +86,11 @@ C:\Users\lidan\Desktop\SWC2Obj\cmake-build-release\swc2lobj\swc2Lobj.exe -s C:/U
 C:/Users/lidan/Desktop/SWC2Obj/cmake-build-release/SWC2Obj.exe -s C:/Users/lidan/Desktop/brain/14193_30neurons/N001.swc -o C:/Users/lidan/Desktop/SWC2Obj/newResult/ -b 256 &&"D:/software/ParaView 5.8.1-Windows-Python3.7-msvc2015-64bit/bin/python4.exe" C:/Users/lidan/PycharmProjects/volume2obj/main.py -i C:/Users/lidan/Desktop/SWC2Obj/newResult/N001.swc -o C:/Users/lidan/Desktop/SWC2Obj/newResult/N001_use.obj &&  C:/Users/lidan/Desktop/SWC2Obj/cmake-build-release/ObjMerge/mergeOBJ.exe -i  C:/Users/lidan/Desktop/SWC2Obj/newResult/N001_use.obj -o C:/Users/lidan/Desktop/SWC2Obj/newResult/N001_new_use.obj
 ```
 
+## 平滑
+采用tubuin(经过尝试为最好平滑)，第二个负参数设为-0.1,即可得到经验的最好的平滑值。
 
 ## 代码未来展望
+- 将tubuin 平滑集成到我的代码中。
 - 智能指针的转换尚未完成
 - paraview解释器的docker环境还未配置好
 
