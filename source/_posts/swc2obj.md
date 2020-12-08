@@ -7,7 +7,7 @@ title: swc2obj-- 报告总结及展望
 ## 关于技术保证
 - 无论是从视觉效果还是从mesh显示均看不出拼接结果。 
 > 证明1: mesh 显示结果（可由第三方人工检查）
-> ![picture 1](images/b88548851cf2a2abc1dc345a0d05d3def572e48a0a5ea95010b68b34ffc4ae14.png)  
+> ![picture 1](/images/b88548851cf2a2abc1dc345a0d05d3def572e48a0a5ea95010b68b34ffc4ae14.png)  
 > 证明2: 参见我主机的80端口
 
 
