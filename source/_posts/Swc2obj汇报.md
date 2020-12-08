@@ -35,3 +35,15 @@
 如果一个方向不足5个，由另一个方向补充，反正一定要10个。 （这个算法如果您觉得不合适，请告诉我大概如何插值会比较好。 ***
 
 
+"D:/software/ParaView 5.8.1-Windows-Python3.7-msvc2015-64bit/bin/python4.exe" C:/Users/lidan/PycharmProjects/volume2obj/main.py -i C:/Users/lidan/Desktop/SWC2Obj/newResult/N022.swc -o C:/Users/lidan/Desktop/SWC2Obj/newResult/N022_use.obj &&  C:/Users/lidan/Desktop/SWC2Obj/cmake-build-release/ObjMerge/mergeOBJ.exe -i  C:/Users/lidan/Desktop/SWC2Obj/newResult/N022_use.obj -o C:/Users/lidan/Desktop/SWC2Obj/newResult/N022_new_use.obj
+
+
+
+## 关于padding
+
++ 1. 需要生成等值面，而且是较为平滑的等值面，所以，必须首先对体数据进行卷积，那么这个过程中卷积n次，每个维度加2*n个padding,这个padding参与计算，但最终截断不要。
++ 2. 不能断，众所周知，marching cube面的生成，至少需要2层8个体数据，如果说，体数据的分块仅仅重合一层，那么负责人的讲，这一层会不会导致歧义（理论上不会），但这个marching cube不是我写的，我不了解其内部细节。而我发现，如果仅仅重合一层，还是会断裂（一半连上了，一半没连上）,所以我选择重合2层，达到了老师要求的视觉结果。 
+
+## 最终结果隐患
+
+由于我重合了2层,所以三角形的数目会更多,在交界处多了一倍，所以这不是一个流形，目前很多软件检测结果都是非流形，meshlab不支持非流形的水密性检测。所以老师是否要求非常硬的就是要一个水密性检测的结果，这样我会想办法去除重复三角形。
