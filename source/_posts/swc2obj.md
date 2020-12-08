@@ -87,5 +87,10 @@ C:/Users/lidan/Desktop/SWC2Obj/cmake-build-release/SWC2Obj.exe -s C:/Users/lidan
 ```
 
 
+## 代码未来展望
+- 智能指针的转换尚未完成
+- paraview解释器的docker环境还未配置好
+
+
 ## 最终结果
 参见10.186.152.213/webgl/
