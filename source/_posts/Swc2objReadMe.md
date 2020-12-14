@@ -1,5 +1,5 @@
 ---
-title: C++ template 学习
+title: SWC2obj项目输出
 ---
 
 # SWC2OBJ(BVH,metaball,swc2vol,vol2obj,mergeOBJ,smoothOBJ)[https://github.com/lidan233/swc2obj]
