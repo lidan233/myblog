@@ -1,4 +1,9 @@
 
+---
+title: swc2obj-- 项目问题
+---
+
+
 # 实验结果
 以比较大的004.obj为例
 ![picture 1](/images/28a776b63101d5c47df5911d9f3fcdd1b7fb1e3d074a23aa47ca7e017f0d47a9.png)  
